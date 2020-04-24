@@ -1,0 +1,138 @@
+<section class="bg-home">
+    <div class="container">
+        <div class="row ">
+            <div class="col-12 pt-4">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#"><img src="assets/img/logo.png"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Plan your experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Programme</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Media</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <img src="assets/img/icon.jpg">
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row align-items-end h-100-vh">
+            <div class="col">
+                <div class="jumbotron">
+                    <h1 class="display-4">Michelangelo</h1>
+                    <p class="lead">The quest for the sacred and eternal</p>
+                    <a (click)="showModalCommentForm($event)" class="btn btn-primary btn-lg mt-4" role="button"><span
+                            class="btn-inner">Add Comment</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="separator">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3 mb-3">
+                <div class="card card-overlay">
+                    <div class="card-body">
+                        <h3 class="card-title">2016 Festival &amp; Performance Guide</h3>
+                        <div class="align-items-end">
+                            <small class="text-muted">October 8, 2017</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3">
+                <div class="card card-overlay">
+                    <div class="card-body">
+                        <h3 class="card-title">Michelangelo: The quest for the sacred and eternal</h3>
+                        <div class="align-items-end">
+                            <small class="text-muted">October 16, 2017</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3">
+                <div class="card card-overlay">
+                    <div class="card-body">
+                        <h3 class="card-title">Grand Hall Music Festival presents James Simon's The Sprint World</h3>
+                        <div class="align-items-end">
+                            <small class="text-muted">October 25, 2017</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3">
+                <div class="card card-overlay">
+                    <div class="card-body">
+                        <h3 class="card-title">Robert Blake's exhibition: An immersive experience through time</h3>
+                        <div class="align-items-end">
+                            <small class="text-muted">November 1, 2017</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="separator bg-light section-carousel">
+    <div class="container-fluid px-0">
+        <carousel [showIndicators]="false">
+            <slide style="margin: 0px 60px;">
+                <div class="row mt-4">
+                    <div class="col-1"></div>
+                    <div class="col-3">
+                        <img src="assets/img/img_1.jpg" class="img-fluid"
+                            style="right: -100px; position: absolute; top: -56px;">
+                    </div>
+                    <div class="col-6 p-4" style="background-color: white; margin-top: 70px;">
+                        <h3>Duis aute irure dolor in reprehenderit in voluptate nesciunt esse iure</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis alias quam aperiam perferendis
+                            earum magni, veritatis voluptates incidunt nesciunt esse iure dolorem assumenda illo commodi
+                            pariatur voluptatem sit? Sint, consequuntur..</p>
+                        <a class="cursor-pointer btn btn-primary btn-lg mt-4">Read More</a>
+                    </div>
+                </div>
+            </slide>
+            <slide style="margin: 0px 60px;">
+                <div class="row mt-4">
+                    <div class="col-1"></div>
+                    <div class="col-3">
+                        <img src="assets/img/img_1.jpg" class="img-fluid"
+                            style="right: -100px; position: absolute; top: -56px;">
+                    </div>
+                    <div class="col-6 p-4" style="background-color: white; margin-top: 70px;">
+                        <h3>Winston Creek Regional Museum to host a new exhibit: An ocean of awe</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a class="cursor-pointer btn btn-primary btn-lg mt-4">Read More</a>
+                    </div>
+                </div>
+            </slide>
+
+        </carousel>
+    </div>
+</section>
+<ng-template #templateModalCommentForm>
+    <div class="p-4">
+        <app-reactive-form></app-reactive-form>
+    </div>
+</ng-template>

@@ -1,0 +1,9 @@
+<router-outlet></router-outlet>
+<app-layout-main-footer></app-layout-main-footer>
+<ng-template #templateModalThanks>
+    <div class=" text-center bg-dark text-white p-4">
+        Thanks for your comment
+        <h4 *ngIf="nameUser">{{ nameUser }}</h4>
+    </div>
+</ng-template>
+<!-- <button (click)="showModalThanks()" type="button" class="btn btn-info"></button> -->
